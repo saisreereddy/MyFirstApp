@@ -11,6 +11,7 @@ const route=require('./routes/route');
 
 //connect to mongodb
 mongoose.connect('mongodb://localhost:27017/contactlistapp');
+mongoose.Promise = require('bluebird');
 
 //on connection
 mongoose.connection.on('connected',()=>{
