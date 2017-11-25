@@ -31,7 +31,7 @@ console.log('error in database connecton'+err);
 });
 
 //port number
-const port=process.env.PORT || 8080;
+const port=3000;
 // adding middleware-cors
 app.use(cors());
 
